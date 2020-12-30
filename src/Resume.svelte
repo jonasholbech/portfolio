@@ -25,7 +25,7 @@
         margin-right: 1rem;
     }
     h1 {
-        color: var(--red);
+        color: var(--highlight-color);
         text-align: center;
     }
     h2 {
@@ -102,7 +102,7 @@
     <div class="inner">
         <h1>Resume</h1>
         <p>So, what have I done so far?</p>
-        <article>
+        <article id="work">
             <h1>Work Experience</h1>
             <div class="timeline">
                 <div class="icon"><span>?</span></div>
@@ -124,7 +124,7 @@
             </div>
         </article>
         <div>
-            <article>
+            <article id="education">
                 <h1>Education</h1>
                 <div class="timeline">
                     <div class="icon"><span>?</span></div>
@@ -148,7 +148,7 @@
                 </div>
             </article>
 
-            <article>
+            <article id="mentions">
                 <h1>Honorable Mentions</h1>
                 <div class="timeline">
                     <div class="icon"><span>?</span></div>

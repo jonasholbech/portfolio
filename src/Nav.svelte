@@ -1,12 +1,20 @@
 <script>
     let open = null;
     $: svgOpen = open === true ? "open" : open === false ? "closed" : null;
+    let scrolled = window.pageYOffset > 30;
+    window.addEventListener("scroll", (e) => {
+        if (window.pageYOffset > 30) {
+            scrolled = true;
+        } else {
+            scrolled = false;
+        }
+    });
 </script>
 
 <style>
     header {
         position: fixed;
-        background: black;
+        background: #272727;
         width: 100vw;
         display: flex;
         justify-content: space-between;
@@ -48,7 +56,7 @@
         height: 50px;
     }
     rect {
-        fill: var(--red);
+        fill: var(--highlight-color);
     }
     svg rect {
         transition: 1s all;
@@ -134,9 +142,12 @@
     button {
         all: unset;
     }
+    .scrolled {
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
 </style>
 
-<header>
+<header class:scrolled>
     <nav>
         <button on:click={() => (open = !open)}>
             <svg viewBox="0 0 100 86" class={svgOpen}>

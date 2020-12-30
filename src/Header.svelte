@@ -1,53 +1,25 @@
-<script>
-</script>
-
 <!-- https://www.styleshout.com/demo/?theme=kards -->
 <style>
-    /*
-        
-        background: #457fca; 
-        background: -webkit-linear-gradient(
-            to left,
-            #5691c8,
-            #457fca
-        );
-        background: linear-gradient(
-            to left,
-            #5691c8,
-            #457fca
-        );
-        */
     section {
-        grid-column: 1/-1;
-        text-align: center;
-        height: 100vh;
         display: grid;
         place-content: center;
-        background: #000000;
-        background: -webkit-linear-gradient(
-            to bottom,
-            #000000,
-            #434343
-        ); /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom, #000000, #434343);
+        text-align: center;
+        height: 100vh;
     }
     .box {
         display: flex;
         flex-direction: column;
     }
     h1 {
-        color: #ffffff;
         font-size: 74px;
         line-height: 1.071;
-
         margin-top: 0;
         margin-bottom: 0.6rem;
-        margin-left: auto;
-        margin-right: auto;
+
         text-shadow: 3px 3px 0px rgba(255, 255, 255, 0.2);
     }
     h2 {
-        color: var(--red);
+        color: var(--highlight-color);
         font-size: 2.3rem;
         line-height: 1.565;
         margin-bottom: 0;
@@ -86,23 +58,23 @@
         font-weight: normal;
         position: relative;
         left: 0.6rem;
-        color: var(--border-color);
+
         transition: all 0.5s;
     }
 
     a:hover {
-        border-color: var(--red);
+        border-color: var(--highlight-color);
         cursor: pointer;
     }
     a:hover:after {
-        color: var(--red);
+        color: var(--highlight-color);
         transform: translateY(4px);
     }
 </style>
 
-<section id="home">
+<section id="home" class="fullbleed">
     <div class="box">
-        <h2>Hello World</h2>
+        <h2>Hello</h2>
         <h1>I'm Jonas Holbech</h1>
         <h3>Front-end developer</h3>
         <a href="#aboutMe">More About Me</a>

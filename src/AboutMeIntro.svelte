@@ -1,6 +1,6 @@
 <style>
     .intro > h1 {
-        color: var(--red);
+        color: var(--highlight-color);
         margin: 1rem auto 0 auto;
     }
     .intro {
