@@ -40,18 +40,17 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
+
 main,
 .fullbleed {
   display: grid;
-  grid-template-columns: 1fr minmax(600px, 1200px) 1fr;
+  grid-template-columns: 1fr minmax(300px, 1200px) 1fr;
 }
-main > * {
+main > *,
+.fullbleed > * {
   padding: 2rem;
 }
-.fullbleed {
-  padding: 0;
-  outline: 10px solid yellow;
-}
+
 main > *,
 .fullbleed > * {
   grid-column: 2/3;
@@ -71,6 +70,7 @@ main > *,
   fill: white;
   stroke: white;
 }
+
 main > section:nth-child(odd) {
   background-color: black;
   color: white;

@@ -3,25 +3,7 @@
 
 <!-- https://www.styleshout.com/demo/?theme=kards -->
 <style>
-    section {
-        grid-column: 1/-1;
-        text-align: center;
-        height: 100vh;
-        display: grid;
-        place-content: center;
-        background: #000000; /* fallback for old browsers */
-        background: -webkit-linear-gradient(
-            to bottom,
-            #000000,
-            #434343
-        ); /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(
-            to bottom,
-            #000000,
-            #434343
-        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-        /*
+    /*
         
         background: #457fca; 
         background: -webkit-linear-gradient(
@@ -35,6 +17,19 @@
             #457fca
         );
         */
+    section {
+        grid-column: 1/-1;
+        text-align: center;
+        height: 100vh;
+        display: grid;
+        place-content: center;
+        background: #000000;
+        background: -webkit-linear-gradient(
+            to bottom,
+            #000000,
+            #434343
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #000000, #434343);
     }
     .box {
         display: flex;
@@ -42,9 +37,9 @@
     }
     h1 {
         color: #ffffff;
-        font-size: 84px;
+        font-size: 74px;
         line-height: 1.071;
-        max-width: 900px;
+
         margin-top: 0;
         margin-bottom: 0.6rem;
         margin-left: auto;

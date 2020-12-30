@@ -32,11 +32,16 @@
         overflow: hidden;
         transition: 1s height;
     }
+    /* TODO: style links*/
+
+    .indented {
+        margin-left: 1rem;
+    }
     div.closed {
         height: 0;
     }
     div.open {
-        height: 6rem;
+        height: 12rem;
     }
     svg {
         width: 50px;
@@ -144,6 +149,9 @@
             <a on:click={() => (open = !open)} href="#home">Home</a>
             <a on:click={() => (open = !open)} href="#aboutMe">About</a>
             <a on:click={() => (open = !open)} href="#resume">Resume</a>
+            <a class="indented" href="#work">Work Experience</a>
+            <a class="indented" href="#education">Education</a>
+            <a class="indented" href="#mentions">Honorable Mentions</a>
         </div>
     </nav>
 

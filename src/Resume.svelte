@@ -13,9 +13,10 @@
     }
     .inner {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         column-gap: 2rem;
     }
+
     .inner > h1,
     .inner > p {
         grid-column: 1/-1;
@@ -97,7 +98,7 @@
     }
 </style>
 
-<section id="resume">
+<section id="resume" class="fullbleed">
     <div class="inner">
         <h1>Resume</h1>
         <p>So, what have I done so far?</p>
@@ -122,51 +123,54 @@
                 {/each}
             </div>
         </article>
-
-        <article>
-            <h1>Education</h1>
-            <div class="timeline">
-                <div class="icon"><span>?</span></div>
-                <div class="content">
-                    <h2>???</h2>
-                    <p><time>Present - ???</time></p>
-                </div>
-                {#each educations as education, index (index)}
-                    <div class="icon">
-                        <BookIcon />
-                    </div>
+        <div>
+            <article>
+                <h1>Education</h1>
+                <div class="timeline">
+                    <div class="icon"><span>?</span></div>
                     <div class="content">
-                        <h2>{education.name}</h2>
-                        <p><time>{education.start} - {education.end}</time></p>
-                        <h3>{education.level}</h3>
-                        <p>{education.notes}</p>
+                        <h2>???</h2>
+                        <p><time>Present - ???</time></p>
                     </div>
-                {/each}
-            </div>
-        </article>
-
-        <article>
-            <h1>Honorable Mentions</h1>
-            <div class="timeline">
-                <div class="icon"><span>?</span></div>
-                <div class="content mention">
-                    <h2>???</h2>
-                    <p><time>Present - ???</time></p>
+                    {#each educations as education, index (index)}
+                        <div class="icon">
+                            <BookIcon />
+                        </div>
+                        <div class="content">
+                            <h2>{education.name}</h2>
+                            <p>
+                                <time>{education.start} - {education.end}</time>
+                            </p>
+                            <h3>{education.level}</h3>
+                            <p>{education.notes}</p>
+                        </div>
+                    {/each}
                 </div>
-                {#each mentions as mention, index (index)}
-                    <div class="icon">
-                        <MentionIcon />
-                    </div>
+            </article>
+
+            <article>
+                <h1>Honorable Mentions</h1>
+                <div class="timeline">
+                    <div class="icon"><span>?</span></div>
                     <div class="content mention">
-                        <h2>{mention.what}</h2>
-                        <p>
-                            <time>{mention.date}</time>
-                            -
-                            {@html mention.notes}
-                        </p>
+                        <h2>???</h2>
+                        <p><time>Present - ???</time></p>
                     </div>
-                {/each}
-            </div>
-        </article>
+                    {#each mentions as mention, index (index)}
+                        <div class="icon">
+                            <MentionIcon />
+                        </div>
+                        <div class="content mention">
+                            <h2>{mention.what}</h2>
+                            <p>
+                                <time>{mention.date}</time>
+                                -
+                                {@html mention.notes}
+                            </p>
+                        </div>
+                    {/each}
+                </div>
+            </article>
+        </div>
     </div>
 </section>
