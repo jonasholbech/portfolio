@@ -9,7 +9,6 @@
 
 <style>
     section {
-        background-color: #ebebeb;
         align-self: center;
     }
     .inner {
@@ -51,10 +50,13 @@
         display: block;
         height: 3px;
         width: 50px;
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(255, 255, 255, 0.2);
         position: absolute;
         left: 0;
         bottom: 0;
+    }
+    .mention time:after {
+        display: none;
     }
     .timeline {
         display: grid;
@@ -62,7 +64,7 @@
         column-gap: 1rem;
     }
     .content {
-        border-top: 1px solid #ccc;
+        border-top: 1px solid rgba(204, 204, 204, 0.1);
         padding: 1rem;
     }
 
@@ -82,8 +84,8 @@
     .icon span {
         text-align: center;
         font-size: 2rem;
-        color: white;
-        background: black;
+        color: black;
+        background: white;
         height: 60px;
     }
     .icon svg {
@@ -95,7 +97,7 @@
     }
 </style>
 
-<section class="fullbleed" id="resume">
+<section id="resume">
     <div class="inner">
         <h1>Resume</h1>
         <p>So, what have I done so far?</p>
@@ -147,7 +149,7 @@
             <h1>Honorable Mentions</h1>
             <div class="timeline">
                 <div class="icon"><span>?</span></div>
-                <div class="content">
+                <div class="content mention">
                     <h2>???</h2>
                     <p><time>Present - ???</time></p>
                 </div>
@@ -155,7 +157,7 @@
                     <div class="icon">
                         <MentionIcon />
                     </div>
-                    <div class="content">
+                    <div class="content mention">
                         <h2>{mention.what}</h2>
                         <p>
                             <time>{mention.date}</time>

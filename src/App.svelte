@@ -4,18 +4,18 @@
 	import AboutMe from "./AboutMe.svelte";
 	import Resume from "./Resume.svelte";
 </script>
-<Nav />
-<main>
-	<Header />
-	<AboutMe />
-	<Resume />
-</main>
 
 <style>
-	
 	/* @media (min-width: 640px) {
 		main {
 			max-width: none;
 		}
 	} */
 </style>
+
+<Nav />
+<main>
+	<Header />
+	<AboutMe />
+	<Resume />
+</main>

@@ -9,6 +9,15 @@ export default [
     description: "JavaScript, Web in general, frameworks and tools",
   },
   {
+    title: "Volunteer",
+    education: "Python Pirates",
+    workplaceShort: "CP",
+    workplaceFull: "Coding Pirates",
+    start: "Jan 2020",
+    end: "Present",
+    description: "Teaching Python through Minecraft",
+  },
+  {
     title: "Lecturer",
     education: "Multimedia Designer",
     workplaceShort: "KEA",
@@ -80,7 +89,7 @@ export default [
     start: "Jun 2006",
     end: "Present",
     description:
-      "Although still registered, it's been a while since I've had time to do anything",
+      "Although still registered, it's been a while since I've had time to do anything. But it used to be 'What I did'",
   },
   {
     title: "Webmaster",

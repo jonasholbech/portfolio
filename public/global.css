@@ -48,6 +48,10 @@ main,
 main > * {
   padding: 2rem;
 }
+.fullbleed {
+  padding: 0;
+  outline: 10px solid yellow;
+}
 main > *,
 .fullbleed > * {
   grid-column: 2/3;
@@ -57,12 +61,43 @@ main > *,
   grid-column: 1/-1;
 }
 .icon svg {
-  background: #ebebeb;
   display: block;
   max-width: 100%;
   height: auto;
   transform: translateX(30px);
 }
+.icon svg.BookIcon path,
+.icon svg.WorkIcon path {
+  fill: white;
+  stroke: white;
+}
+main > section:nth-child(odd) {
+  background-color: black;
+  color: white;
+}
+main > section:nth-child(odd) h1,
+main > section:nth-child(odd) h2,
+main > section:nth-child(odd) h3,
+main > section:nth-child(odd) h4,
+main > section:nth-child(odd) h5,
+main > section:nth-child(odd) h6 {
+  color: white;
+}
+/*MentionIcon*/
+.ani {
+  animation: 1s pop;
+}
+@keyframes pop {
+  0% {
+    opacity: 1;
+    transform: translate(-50px, 50px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(100px, -100px);
+  }
+}
+
 /* 
 body {
   margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);

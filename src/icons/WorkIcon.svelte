@@ -54,6 +54,7 @@
 </style>
 
 <svg
+    class="WorkIcon"
     viewBox="0 0 512 512"
     style="--chair:{getColor()}; --delay: {Math.random() * 10 - 5}s; --gameSpeed: {animationDuration}s;">
     <rect class="screen" x="106" y="26" width="301" height="171" />

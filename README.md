@@ -1,17 +1,16 @@
 workplaces, education, honorable måske cols instead of grid?
 
-z-index on header
 descriptions on tooltips
 
-honorables in external js
+click on tooltips to toggle
 
-ikon til mentions
+frameworks + shiny things in data/
 
 attributions
 
-Fireworks
+Clebration
 
-<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> How to attribute for other media?
+<div>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> How to attribute for other media?
 
 Book icon
 
