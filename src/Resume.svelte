@@ -83,11 +83,12 @@
         transform: translateX(30px);
     }
     .icon span {
-        text-align: center;
-        font-size: 2rem;
         color: black;
         background: white;
         height: 60px;
+        line-height: 60px;
+        text-align: center;
+        font-size: 2rem;
     }
     .icon svg {
         /*empty ruleset, moved to global, svelte strips this one out*/

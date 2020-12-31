@@ -25,6 +25,7 @@
     h1 {
         color: white;
         margin-right: 1rem;
+        line-height: 1;
     }
     button {
         margin-left: 1rem;
